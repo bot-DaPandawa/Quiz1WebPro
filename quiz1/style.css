@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+   
+    background-image: linear-gradient(#f9f7f7fd, #f9f7f7c5), url('asset/landing.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 8%; 
+    border-bottom: 2px solid #526072;
+    position: fixed; 
+   top: 0; 
+    left: 0;
+    width: 100%; 
+    box-sizing: border-box;
+    z-index: 9999;
+    
+
+    background: rgba(249, 247, 247, 0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(17, 45, 78, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none; 
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #112D4E;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+
+    display: flex;            
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;    border-radius: 6px;
+}
+
+nav a:hover, nav a.active {
+    color: #3F72AF;
+}
+
+.hero {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -50px; 
+}
+
+.greeting {
+    color: #3F72AF;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 80px;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 25px;
+}
+
+.role-text {
+    font-size: 32px;
+    font-weight: 600;
+    color: #112D4E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+}
+
+.highlight {
+    color: #29598b; 
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #111;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
